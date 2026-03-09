@@ -3,7 +3,8 @@ import type { HeaderLink, SiteConfig } from '@/types/config';
 export const siteConfig: SiteConfig = {
   siteTitle: 'My Site',
   siteDesc: 'My Site Description',
-  siteUrl: 'https://example.com',
+  siteUrl: 'https://nono-k.github.io',
+  siteBase: 'knono-webgl-sketch',
   siteType: 'website',
   siteLocale: 'ja_JP',
   siteIcon: '/favicon.svg',

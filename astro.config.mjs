@@ -5,12 +5,12 @@ import { siteConfig } from './src/config';
 
 import mdx from '@astrojs/mdx';
 
-const { siteUrl } = siteConfig;
+const { siteUrl, siteBase } = siteConfig;
 
 // https://astro.build/config
 export default defineConfig({
   site: siteUrl,
-
+  base: siteBase,
   vite: {
     css: {
       preprocessorOptions: {
