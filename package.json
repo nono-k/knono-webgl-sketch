@@ -9,14 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/mdx": "^6.0.3",
     "@tweakpane/plugin-essentials": "^0.2.1",
-    "astro": "^5.6.1",
+    "astro": "^6.4.5",
     "sass": "^1.86.3",
     "tweakpane": "^4.0.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.6",
     "@tweakpane/core": "^2.0.5"
   }
 }

@@ -1,9 +1,9 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
 
-import { siteConfig } from './src/config';
-
+import { fileURLToPath } from 'node:url';
 import mdx from '@astrojs/mdx';
+import { defineConfig } from 'astro/config';
+import { siteConfig } from './src/config';
 
 const { siteUrl, siteBase } = siteConfig;
 
@@ -12,10 +12,15 @@ export default defineConfig({
   site: siteUrl,
   base: siteBase,
   vite: {
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+      },
+    },
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "src/styles/mixin.scss";',
+          additionalData: '@use "@/styles/mixin.scss";',
         },
       },
     },
